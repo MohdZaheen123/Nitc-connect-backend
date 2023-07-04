@@ -28,5 +28,5 @@ app.use('/tickets', ticketRouter)
 
 
 app.listen(5000, () => {
-    console.log('app listening at localhost 5000')
+   console.log(`Server is running on port: 5000.......`)
 })
