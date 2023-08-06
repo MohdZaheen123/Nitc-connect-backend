@@ -11,7 +11,7 @@ const productSchema = mongoose.Schema({
     },
     createdby: {
         type: String,
-        required: [true, "Email required tocreate product"]
+        required: [true, "Email required to create product"]
     },
     category: {
         type: String,
@@ -23,7 +23,7 @@ const productSchema = mongoose.Schema({
         required: true
     }
 }, {
-    expires: 2592000
+    expires: 864000
 })
 
 const productModel = mongoose.model('product', productSchema)
