@@ -19,10 +19,10 @@ const ticketSchema = mongoose.Schema({
     },
     createdby: {
         type: String,
-        required: [true, "Email required tocreate product"]
+        required: [true, "Email required to create product"]
     }
 }, {
-    expires: 2592000
+    expires: 864000
 })
 
 const ticketModel = mongoose.model('ticket', ticketSchema)
